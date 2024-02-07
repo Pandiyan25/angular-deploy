@@ -1,0 +1,22 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div>
+      <a class="navbar-brand">Amazon Shop</a>
+      <a class="navbar-brand" href="about">About</a>
+      <a class="navbar-brand" href="product">Product</a>
+    </div>
+
+    <form class="d-flex">
+      <input
+        class="form-control me-2"
+        type="text"
+        placeholder="Search Product"
+        [formControl]="searchValue"
+        (input)="onTextChange()"
+      />
+      <!-- <button class="btn btn-outline-warning" type="submit">
+       Search
+      </button> -->
+    </form>
+  </div>
+</nav>

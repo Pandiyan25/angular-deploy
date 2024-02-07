@@ -1,0 +1,46 @@
+<div class="container mt-3">
+  <div class="selector">
+    <div class="selector-item">
+      <input
+        type="radio"
+        id="all"
+        name="selector"
+        class="selector-item_radio"
+        value="all"
+        [(ngModel)]="selectedValue"
+        (change)="onradioChange()"
+      />
+      <label for="all" class="selector-item_label">{{
+        "All Products(" + all + ")"
+      }}</label>
+    </div>
+    <div class="selector-item">
+      <input
+        type="radio"
+        id="radio2"
+        name="selector"
+        class="selector-item_radio"
+        value="ratings"
+        [(ngModel)]="selectedValue"
+        (change)="onradioChange()"
+      />
+      <label for="radio2" class="selector-item_label">{{
+        "Top Ratings(" + ratings + ")"
+      }}</label>
+    </div>
+    <div class="selector-item">
+      <input
+        type="radio"
+        id="radio3"
+        name="selector"
+        class="selector-item_radio"
+        value="offers"
+        [(ngModel)]="selectedValue"
+        (change)="onradioChange()"
+      />
+      <label for="radio3" class="selector-item_label">{{
+        "Offers(" + offers + ")"
+      }}</label>
+    </div>
+  </div>
+</div>
